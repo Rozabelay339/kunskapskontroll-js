@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktlista Applikation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Kontaktlista</h1>
+    <div id="new-contact-form">
+        <h2>Lägg till ny kontakt</h2>
+        <div id="input-and-button">
+            <div id="input-container">
+                <input type="text" id="name" placeholder="Ange namn" required>
+                <input type="text" id="phone" placeholder="Ange telefonnummer" required>
+            </div>
+            <button id="add-contact-btn">Lägg till kontakt</button>
+        </div>
+        <div id="error-message"></div>
+    </div>
+
+    <div id="contact-header">
+        <h2 id="contact-title">Kontakter</h2>
+        <button id="delete-list-btn">Radera lista</button>
+    </div>
+
+    <div id="contact-list" class="contact-container">
+
+        <!-- The contacts will be added here as list items -->
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
