@@ -1,0 +1,172 @@
+:root {
+    --primary-bg: rgb(104, 70, 141);
+    --highlight-bg: rgb(37, 8, 70);
+    --secondary-bg: rgb(240, 207, 236);
+    --primary-text: #543756;
+    --input-border: #89598f;
+    --button-bg: tomato;
+    --button-hover-bg: #65121c;
+    --error-color: red;
+    --edit-bg: #8c7121;
+    --edit-hover-bg: #5d480b;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1,
+h2 {
+    color: var(--primary-text);
+}
+
+#new-contact-form,
+#contact-header {
+    width: 100%;
+    max-width: 900px;
+}
+
+#input-and-button {
+    display: flex;
+    gap: 5px;
+}
+
+#input-container {
+    background-color: var(--primary-bg);
+    padding: 10px;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+#input-container input {
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    background-color: var(--secondary-bg);
+    color: #33050a;
+    flex: 1;
+    margin-right: 5px;
+}
+
+#add-contact-btn {
+    padding: 10px 15px;
+    background-color: var(--primary-bg);
+    color: var(--secondary-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+#add-contact-btn:hover {
+    background-color: var(--highlight-bg);
+}
+
+#input-container input:focus,
+.contact-item input:focus {
+    outline: 2px solid rgb(32, 32, 133);
+    outline-offset: 2px;
+}
+
+#error-message {
+    color: var(--error-color);
+    background-color: #ffe6e6;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: lighter;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#contact-title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+#delete-list-btn {
+    padding: 10px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#delete-list-btn:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--primary-bg);
+    border-radius: 8px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.contact-item input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: var(--secondary-bg);
+    color: #656565;
+}
+
+.contact-item input:disabled {
+    background-color: var(--secondary-bg);
+    color: var(--primary-text);
+}
+
+.contact-item button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-item .edit-btn {
+    background-color: var(--edit-bg);
+    color: var(--secondary-bg);
+}
+
+.contact-item .edit-btn:hover {
+    background-color: var(--edit-hover-bg);
+}
+
+.contact-item .delete-btn {
+    background-color: var(--button-bg);
+    color: white;
+}
+
+.contact-item .delete-btn:hover {
+    background-color: var(--button-hover-bg);
+}
